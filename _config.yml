@@ -2,7 +2,7 @@ theme: jekyll-theme-modernist
 title: My Website
 description: Welcome to my GitHub Pages site!
 url: "https://Yean1277.github.io"   # Your main site URL
-baseurl: ""                           # Leave empty for GitHub Pages main repo; use "/blog" if in a subfolder
+# baseurl: ""                           # Leave empty for GitHub Pages main repo; use "/blog" if in a subfolder
 
 # ------------------------------
 # Author information
