@@ -16,7 +16,6 @@ author:
 # ------------------------------
 # Build settings
 # ------------------------------
-theme: minima            # Default GitHub Pages theme
 markdown: kramdown       # Markdown engine
 highlighter: rouge       # Syntax highlighting for code
 permalink: /:categories/:title/
