@@ -1,3 +1,92 @@
 theme: jekyll-theme-modernist
 title: My Website
 description: Welcome to my GitHub Pages site!
+url: "https://looyeanter.github.io"   # Your main site URL
+baseurl: ""                           # Leave empty for GitHub Pages main repo; use "/blog" if in a subfolder
+
+# ------------------------------
+# Author information
+# ------------------------------
+author:
+  name: "Loo Yean Ter"
+  email: "looyeanter@example.com"
+  github: "looyeanter"
+  youtube: "https://youtube.com/@looyeanter"
+
+# ------------------------------
+# Build settings
+# ------------------------------
+theme: minima            # Default GitHub Pages theme
+markdown: kramdown       # Markdown engine
+highlighter: rouge       # Syntax highlighting for code
+permalink: /:categories/:title/
+
+# ------------------------------
+# Plugins
+# ------------------------------
+plugins:
+  - jekyll-feed          # RSS feed
+  - jekyll-sitemap       # Adds sitemap.xml
+  - jekyll-seo-tag       # Better SEO
+  - jekyll-paginate      # Pagination for blog posts
+
+# ------------------------------
+# Pagination
+# ------------------------------
+paginate: 5              # Number of posts per page
+paginate_path: "/page:num/"
+
+# ------------------------------
+# Collections
+# ------------------------------
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
+# ------------------------------
+# Defaults
+# ------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Loo Yean Ter"
+      comments: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# ------------------------------
+# Social links (for SEO + theme)
+# ------------------------------
+social_links:
+  twitter: ""
+  github: "https://github.com/looyeanter"
+  youtube: "https://youtube.com/@looyeanter"
+  linkedin: ""
+
+# ------------------------------
+# Exclude / Include files
+# ------------------------------
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+include:
+  - _pages
+  - _projects
+
+# ------------------------------
+# Other custom options
+# ------------------------------
+show_excerpts: true
+future: false             # Do not show posts dated in the future
+timezone: Asia/Kuala_Lumpur
