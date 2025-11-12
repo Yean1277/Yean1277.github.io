@@ -22,5 +22,27 @@
       <a href="https://youtube.com/@looyeanter">My YouTube</a>
     </p>
   </main>
+
+  <-- Music Player/>
+  <div class="audio-player" aria-label="Audio Player">
+    <div class="track-info">
+      <img src="cover.jpg" class="cover" alt="Track Cover" id="trackCover">
+      <div>
+        <div class="track-title" id="trackTitle">Star Journey</div>
+        <div class="track-artist" id="trackArtist">Yean</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="play-btn" id="playBtn" aria-label="Play"><span>&#9654;</span></button>
+      <button class="mute-btn" id="muteBtn" aria-label="Mute"><span>&#128266;</span></button>
+      <span class="current-time" id="currentTime">0:00</span>
+      <div class="progress-container" id="progressContainer" aria-label="Audio progress">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span class="duration" id="duration">0:00</span>
+    </div>
+    <audio id="audio" src="music.mp3"></audio>
+  </div>
+  <script src="player.js"></script>
 </body>
 </html>
